@@ -1,0 +1,108 @@
+header{
+  width:100%;
+  background:white;
+  font-family:sans-serif;
+}
+
+
+.header__wrapper{
+}
+
+
+
+.header__top--part{
+  display:flex;
+  align-items:center;
+  gap:18px;
+}
+
+
+.header__top--part svg{
+  font-size:24px;
+}
+
+
+.header__top--part h1{
+  font-size:22px;
+  font-weight:700;
+}
+
+
+.header__top--part img{
+  height:32px;
+}
+
+
+
+.header__input{
+  flex:1;
+}
+
+.header__input form{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#f3f4f6;
+  padding:10px 14px;
+  border-radius:10px;
+}
+
+.header__input input{
+  border:none;
+  outline:none;
+  background:transparent;
+  width:100%;
+  font-size:14px;
+}
+
+
+
+.header__deals, .heager__sign, .header__cart{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  font-size:14px;
+}
+
+.header__deals svg, .heager__sign svg, .header__cart svg{
+  font-size:20px;
+}
+
+
+hr{
+  margin:12px 0;
+  border:0.5px solid #e5e5e5;
+}
+
+
+
+.header__bottom--part{
+  display:flex;
+  align-items:center;
+  gap:12px;
+}
+
+
+
+.header__bottom--part select{
+  border:none;
+  outline:none;
+  padding:8px 16px;
+  border-radius:20px;
+  background:#f2f2f2;
+  font-size:14px;
+  cursor:pointer;
+}
+
+
+
+.select__first{
+  background-color: #000 !important;
+  color: white;
+}
+
+
+
+.select__second{
+  background:#f2f2f2;
+}

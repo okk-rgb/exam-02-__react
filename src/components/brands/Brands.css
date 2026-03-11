@@ -1,0 +1,27 @@
+.brands__wrapper h2{
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.brands__card--wrapper{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.brands__card{
+  background: #f3f3f3;
+  border-radius: 12px;
+  height: 168px;
+  width: 168px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brands__card img{
+  max-width: 115px;
+  max-height: 40px;
+  object-fit: contain;
+}
