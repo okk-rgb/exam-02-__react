@@ -9,6 +9,7 @@ import "./styles.css";
 export default function Banner() {
   return (
     <div className="banner">
+      <div className="container">
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
           <img src={bimg} alt="" />
@@ -22,6 +23,7 @@ export default function Banner() {
           <img src={bimg} alt="" />
         </SwiperSlide>
       </Swiper>
+      </div>
     </div>
   );
 }

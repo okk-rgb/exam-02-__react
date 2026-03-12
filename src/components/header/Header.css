@@ -96,9 +96,47 @@ hr{
 
 
 
-.select__first{
-  background-color: #000 !important;
+.hover__header{
+  position: relative;
+  display: inline-block;
+}
+
+.hover__btn{
+  background: black;
   color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hover__header a {
+  color: #fff;
+}
+
+.hover__menu{
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  width: 220px;
+  padding: 15px;
+  display: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.hover__header:hover .hover__menu{
+  display: block;
+  z-index: 10;
+}
+
+.hover__list p{
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.hover__list p:hover{
+  color: #2a7be4;
 }
 
 

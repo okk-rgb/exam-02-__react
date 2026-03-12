@@ -6,12 +6,19 @@ import Pluses from './components/pluses/Pluses'
 import Brands from './components/brands/Brands'
 import Deals from './components/deals/Deals'
 import Footer from './components/footer/Footer'
+import { Route, Routes } from 'react-router-dom'
+import Products from './components/products/Products'
+import ProductDetails from './pages/productDetails/ProductDetails'
 
 const App = () => {
   return (
     <div>
       <Header/>
-      <Home/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/products' element={<Products/>}/>
+        <Route path='/pros' element={<ProductDetails/>}/>
+      </Routes>
       <Footer/>
     </div>
   )

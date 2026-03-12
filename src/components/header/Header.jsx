@@ -5,6 +5,7 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { FaUser } from "react-icons/fa";
 import himg1 from '../../assets/header_img1.png'
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -12,7 +13,7 @@ const Header = () => {
       <div className="container">
         <div className="header__wrapper">
           <div className="header__top--part">
-            <HiMiniBars3BottomLeft/>
+            <Link to={'/'}><HiMiniBars3BottomLeft/></Link>
             <h1>UNITED DEALS</h1>
             <img src={himg1} alt="" />
             <div className="header__input">
@@ -41,9 +42,33 @@ const Header = () => {
           </div>
               <hr />
           <div className="header__bottom--part">
-            <select name="" className="select__first">
+            {/* <select name="" className="select__first">
               <option value="">Groceries</option>
-            </select>
+            </select> */}
+
+            <div className="hover__header">
+              <button className='hover__btn'><Link to={'/products'}>Groceries</Link></button>
+
+
+              <div className="hover__menu">
+
+                <div className="hover__list">
+                  <p>Computer & Laptop</p>
+                  <p>Computer Accessories</p>
+                  <p>Smartphone</p>
+                  <p>Headphone</p>
+                  <p>Mobile Accessories</p>
+                  <p>Gaming Console</p>
+                  <p>Camera & Photo</p>
+                  <p>TV & Home Appliances</p>
+                  </div>
+                
+
+
+              </div>
+
+
+            </div>
 
             <select name="" className="select__second">
               <option value="">Premium Fruits</option>
